@@ -23,6 +23,7 @@
         "ostream": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "ratio": "cpp"
     }
 }
