@@ -96,16 +96,16 @@ Farmacie& Farmacie::operator++() {
 }
 
 Farmacie& Farmacie::operator++(int v) {
-	Farmacie temp = *this;
+	Farmacie& temp = *this;
 	this->nrAngajati++;
 	return temp;
 }
 
-ostream operator<<(ostream &out, Farmacie &ob) {
+ostream& operator<<(ostream &out, Farmacie &ob) {
 	
 }
 
-istream operator>>(istream &in, Farmacie &ob) {
+istream &operator>>(istream &in, Farmacie &ob){
 	cout << "Den: ";
 	char buf[50];
 	in.get(buf, 50);

@@ -6,7 +6,8 @@ class Farmacie {
 	int nrLuni;
 	double* CaLuna;
 	int id;
-	public:
+
+public:
 	Farmacie();
 	Farmacie(char *den, int nrAngajati, int nrLuni, double *CaLuna, int id);
 	Farmacie(const Farmacie &ob);
@@ -20,8 +21,8 @@ class Farmacie {
 	Farmacie& operator=(const Farmacie &ob);
 	Farmacie& operator+(int v);
 	Farmacie& operator++();
-	Farmacie operator++(int v);
+	Farmacie& operator++(int v);
 	friend ostream& operator<<(ostream &out, Farmacie &ob);
-	friend istream& operator>>(istream &in, Farmacie &ob);
+	friend istream &operator>>(istream &in, Farmacie &ob);
 	operator int();
 };
